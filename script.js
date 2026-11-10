@@ -621,4 +621,4 @@ function render() {
   document.querySelectorAll('header button[data-v]').forEach(b => b.classList.toggle('on', b.dataset.v === view));
 }
 
-render();
+document.addEventListener('DOMContentLoaded', render);
